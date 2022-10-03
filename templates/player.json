@@ -4,17 +4,15 @@
     "meta": null,
     "data": {
         "entities": {
-            "ab2cc78c-f757-4edf-b7f1-64c6ebdd4d95": {
+            "bc072a6d-1cec-48e2-988d-db16e289529e": {
                 "name": "Demo Player",
                 "tags": [
                     "player"
                 ],
                 "enabled": true,
-                "resource_id": "ab2cc78c-f757-4edf-b7f1-64c6ebdd4d95",
+                "resource_id": "bc072a6d-1cec-48e2-988d-db16e289529e",
                 "parent": null,
-                "children": [
-                    "2fc7943b-529a-44ab-9214-5c191202c413"
-                ],
+                "children": [],
                 "position": [
                     0,
                     0,
@@ -67,34 +65,33 @@
                             "networkEntity": {
                                 "enabled": true,
                                 "attributes": {
-                                    "syncInterval": 1,
-                                    "id": 0,
+                                    "id": "",
                                     "owner": "",
                                     "properties": [
                                         {
                                             "path": "position",
                                             "interpolate": true,
-                                            "ignoreForOwner": true
+                                            "ignoreForOwner": false
                                         },
                                         {
                                             "path": "rotation",
-                                            "interpolate": true,
-                                            "ignoreForOwner": true
-                                        },
-                                        {
-                                            "path": "scale",
                                             "interpolate": true,
                                             "ignoreForOwner": false
                                         },
                                         {
                                             "path": "rigidbody.angularVelocity",
                                             "interpolate": true,
-                                            "ignoreForOwner": true
+                                            "ignoreForOwner": false
                                         },
                                         {
                                             "path": "rigidbody.linearVelocity",
                                             "interpolate": true,
-                                            "ignoreForOwner": true
+                                            "ignoreForOwner": false
+                                        },
+                                        {
+                                            "path": "scale",
+                                            "interpolate": false,
+                                            "ignoreForOwner": false
                                         }
                                     ]
                                 }
@@ -138,138 +135,20 @@
                         "rootBone": null
                     }
                 }
-            },
-            "2fc7943b-529a-44ab-9214-5c191202c413": {
-                "name": "Username",
-                "tags": [],
-                "enabled": true,
-                "resource_id": "2fc7943b-529a-44ab-9214-5c191202c413",
-                "parent": "ab2cc78c-f757-4edf-b7f1-64c6ebdd4d95",
-                "children": [],
-                "position": [
-                    7.93595639011511e-17,
-                    1.5,
-                    7.93595639011511e-17
-                ],
-                "rotation": [
-                    0,
-                    7.016709505401496e-15,
-                    0
-                ],
-                "scale": [
-                    0.01,
-                    0.01,
-                    1
-                ],
-                "components": {
-                    "element": {
-                        "enabled": true,
-                        "type": "text",
-                        "anchor": [
-                            0.5,
-                            0.5,
-                            0.5,
-                            0.5
-                        ],
-                        "pivot": [
-                            0.5,
-                            0.5
-                        ],
-                        "text": "Username",
-                        "key": null,
-                        "fontAsset": 61886486,
-                        "fontSize": 32,
-                        "minFontSize": 8,
-                        "maxFontSize": 32,
-                        "autoFitWidth": false,
-                        "autoFitHeight": false,
-                        "maxLines": null,
-                        "lineHeight": 32,
-                        "wrapLines": true,
-                        "spacing": 1,
-                        "color": [
-                            0,
-                            1,
-                            0.043137254901960784
-                        ],
-                        "opacity": 1,
-                        "textureAsset": null,
-                        "spriteAsset": null,
-                        "spriteFrame": 0,
-                        "pixelsPerUnit": null,
-                        "width": 138.688,
-                        "height": 33.056,
-                        "margin": [
-                            -69.344,
-                            -15.028,
-                            -69.344,
-                            -18.028
-                        ],
-                        "alignment": [
-                            0.5,
-                            0.5
-                        ],
-                        "outlineColor": [
-                            0,
-                            0,
-                            0,
-                            1
-                        ],
-                        "outlineThickness": 0,
-                        "shadowColor": [
-                            0,
-                            0,
-                            0,
-                            1
-                        ],
-                        "shadowOffset": [
-                            0,
-                            0
-                        ],
-                        "rect": [
-                            0,
-                            0,
-                            1,
-                            1
-                        ],
-                        "materialAsset": null,
-                        "autoWidth": true,
-                        "autoHeight": true,
-                        "useInput": false,
-                        "batchGroupId": null,
-                        "mask": false,
-                        "layers": [
-                            4
-                        ],
-                        "enableMarkup": false
-                    },
-                    "script": {
-                        "enabled": true,
-                        "order": [
-                            "username"
-                        ],
-                        "scripts": {
-                            "username": {
-                                "enabled": true,
-                                "attributes": {}
-                            }
-                        }
-                    }
-                }
             }
         }
     },
     "file": null,
     "path": [
-        61886292
+        104337456
     ],
-    "id": 61886320,
-    "uniqueId": 61886320,
-    "createdAt": "2021-09-06T11:34:26.748Z",
+    "id": 104371771,
+    "uniqueId": 104371771,
+    "createdAt": "2022-09-30T13:31:52.629Z",
     "modifiedAt": null,
     "scope": {
         "type": "project",
-        "id": 857037
+        "id": 990007
     },
     "user_id": 297692,
     "source_asset_id": null,
@@ -279,7 +158,6 @@
     "type": "template",
     "task": null,
     "i18n": {},
-    "checkpoint_id": "2bc28656-62ab-4197-aeac-4434e930a675",
     "region": "eu-west-1",
     "exclude": true
 }
