@@ -28,7 +28,7 @@ Lantern.prototype.offActivation = function (activated) {
 
 Lantern.prototype.colorChange = function () {
       if (this.activations > 0) {
-        this.color.set(1, 0, 1);
+        this.color.set(5, 195, 30);
     } else {
         this.color.set(0, 0, 0);
     }
