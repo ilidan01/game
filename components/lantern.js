@@ -6,6 +6,7 @@ Lantern.prototype.initialize = function () {
     this.activations = 0;
 
     this.entity.on('activation', this.onActivation, this);
+    this.entity.on('activationOff', this.offActivation, this);
 };
 
 Lantern.prototype.swap = function (old) {
@@ -16,6 +17,16 @@ Lantern.prototype.swap = function (old) {
 };
 
 Lantern.prototype.onActivation = function (activated) {
+  this.activations++;
+   this.colorChange();
+};
+
+Lantern.prototype.offActivation = function (activated) {
+  this.activations--;
+   this.colorChange();
+};
+
+Lantern.prototype.colorChange = function () {
       if (this.activations > 0) {
         this.color.set(1, 0, 1);
     } else {
