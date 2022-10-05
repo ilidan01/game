@@ -50,6 +50,7 @@ FloorButton.prototype.onTriggerLeave = function (entity) {
 
     this.activations--;
     this.connectedEntity.fire('activation', false);
+    this.connectedEntity.fire('activationOff', true);
 };
 
 FloorButton.prototype.hasTag = function (tags) {
