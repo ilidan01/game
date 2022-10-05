@@ -5,6 +5,8 @@ Game.attributes.add('userTemplate', { type: 'asset', assetType: 'template' });
 Game.prototype.initialize = function () {
     this.networkEntities = this.app.room.networkEntities;
     this.users = new Map();
+    
+    this.nicknames = ['user1','user2','user3','user4','user5','user6'];
 
     this.tplUser = this.userTemplate.resource;
 
@@ -33,6 +35,7 @@ Game.prototype.swap = function (old) {
 Game.prototype.onJoin = function (user) {
     // user entity
     const entity = this.tplUser.instantiate(this.app);
+    entity.children[0].entity.element.text = this.nicmkames[(Math.floor(Math.random() * 7))];
     entity.name = 'User ' + user.id;
     entity.script.networkEntity.owner = user.id;
     this.entity.addChild(entity);
