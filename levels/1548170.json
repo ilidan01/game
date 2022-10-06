@@ -1,0 +1,1342 @@
+{
+    "branch_id": "fa22c367-d2f1-4ea9-9c6f-ff1124aff3c0",
+    "project_id": 990007,
+    "name": "Game",
+    "created": "2022-09-30T08:02:47.107Z",
+    "settings": {
+        "physics": {
+            "gravity": [
+                0,
+                -9.8,
+                0
+            ]
+        },
+        "render": {
+            "lightmapFilterRange": 10,
+            "fog_end": 1000,
+            "lightmapFilterEnabled": false,
+            "ambientBake": false,
+            "tonemapping": 3,
+            "lightingAreaLightsEnabled": false,
+            "lightingShadowType": 0,
+            "ambientBakeOcclusionContrast": 0,
+            "skybox": null,
+            "lightingCookieAtlasResolution": 2048,
+            "fog_density": 0.01,
+            "lightmapFilterSmoothness": 0.2,
+            "gamma_correction": 1,
+            "exposure": 1,
+            "lightingShadowsEnabled": true,
+            "fog_start": 1,
+            "skyboxIntensity": 1,
+            "global_ambient": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "ambientBakeNumSamples": 1,
+            "fog_color": [
+                0,
+                0,
+                0
+            ],
+            "lightingCells": [
+                10,
+                3,
+                10
+            ],
+            "lightmapMode": 1,
+            "lightingCookiesEnabled": false,
+            "clusteredLightingEnabled": true,
+            "ambientBakeSpherePart": 0.4,
+            "fog": "none",
+            "ambientBakeOcclusionBrightness": 0,
+            "lightmapMaxResolution": 2048,
+            "lightingMaxLightsPerCell": 255,
+            "lightingShadowAtlasResolution": 2048,
+            "skyboxMip": 0,
+            "lightmapSizeMultiplier": 16,
+            "skyboxRotation": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "scene": 1548170,
+    "entities": {
+        "45593f7a-4096-11ed-87b8-3a0f65194824": {
+            "position": [
+                0.4965762495994568,
+                3.7700696873528976,
+                12.929754257202148
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Camera",
+            "parent": "45593dc2-4096-11ed-87b8-3a0f65194824",
+            "resource_id": "45593f7a-4096-11ed-87b8-3a0f65194824",
+            "components": {
+                "camera": {
+                    "projection": 0,
+                    "farClip": 128,
+                    "clearColorBuffer": true,
+                    "layers": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4
+                    ],
+                    "priority": 0,
+                    "fov": 80,
+                    "clearDepthBuffer": true,
+                    "frustumCulling": true,
+                    "clearColor": [
+                        0.118,
+                        0.118,
+                        0.118,
+                        1
+                    ],
+                    "enabled": true,
+                    "orthoHeight": 4,
+                    "nearClip": 0.1,
+                    "rect": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ]
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "camera"
+                    ],
+                    "scripts": {
+                        "camera": {
+                            "enabled": true,
+                            "attributes": {}
+                        }
+                    }
+                }
+            },
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": []
+        },
+        "45593dc2-4096-11ed-87b8-3a0f65194824": {
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Root",
+            "parent": null,
+            "resource_id": "45593dc2-4096-11ed-87b8-3a0f65194824",
+            "components": {
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "game"
+                    ],
+                    "scripts": {
+                        "game": {
+                            "enabled": true,
+                            "attributes": {
+                                "userTemplate": 104371771
+                            }
+                        }
+                    }
+                }
+            },
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": [
+                "45593f7a-4096-11ed-87b8-3a0f65194824",
+                "4559407e-4096-11ed-87b8-3a0f65194824",
+                "91b77f51-91fa-4bfe-a923-c6155549c84e",
+                "b15b8ccb-394b-4f50-ac6b-184ba2565924"
+            ]
+        },
+        "45594254-4096-11ed-87b8-3a0f65194824": {
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                20,
+                1,
+                8
+            ],
+            "name": "Ground",
+            "parent": "91b77f51-91fa-4bfe-a923-c6155549c84e",
+            "resource_id": "45594254-4096-11ed-87b8-3a0f65194824",
+            "components": {
+                "render": {
+                    "isStatic": false,
+                    "castShadows": true,
+                    "castShadowsLightmap": true,
+                    "rootBone": null,
+                    "lightmapped": false,
+                    "batchGroupId": null,
+                    "layers": [
+                        0
+                    ],
+                    "receiveShadows": true,
+                    "enabled": true,
+                    "asset": null,
+                    "materialAssets": [
+                        104336019
+                    ],
+                    "type": "plane",
+                    "lightmapSizeMultiplier": 1
+                },
+                "collision": {
+                    "enabled": true,
+                    "type": "box",
+                    "halfExtents": [
+                        10,
+                        0,
+                        4
+                    ],
+                    "radius": 0.5,
+                    "axis": 1,
+                    "height": 2,
+                    "asset": null,
+                    "renderAsset": null
+                },
+                "rigidbody": {
+                    "enabled": true,
+                    "type": "static",
+                    "mass": 1,
+                    "linearDamping": 0,
+                    "angularDamping": 0,
+                    "linearFactor": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "angularFactor": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "friction": 1,
+                    "restitution": 0
+                }
+            },
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": []
+        },
+        "4559407e-4096-11ed-87b8-3a0f65194824": {
+            "position": [
+                0,
+                6,
+                13
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Light",
+            "parent": "45593dc2-4096-11ed-87b8-3a0f65194824",
+            "resource_id": "4559407e-4096-11ed-87b8-3a0f65194824",
+            "components": {
+                "light": {
+                    "castShadows": true,
+                    "isStatic": false,
+                    "vsmBlurSize": 6,
+                    "shadowUpdateMode": 2,
+                    "normalOffsetBias": 0.05,
+                    "color": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "bakeArea": 0,
+                    "numCascades": 1,
+                    "outerConeAngle": 45,
+                    "bakeNumSamples": 1,
+                    "affectDynamic": true,
+                    "intensity": 1,
+                    "bakeDir": true,
+                    "cookieAngle": 0,
+                    "affectLightmapped": false,
+                    "cookieChannel": "rgb",
+                    "innerConeAngle": 40,
+                    "shadowBias": 0.2,
+                    "bake": false,
+                    "falloffMode": 0,
+                    "cookieAsset": null,
+                    "vsmBias": 0.01,
+                    "layers": [
+                        0
+                    ],
+                    "cookieIntensity": 1,
+                    "cascadeDistribution": 0.5,
+                    "cookieOffset": [
+                        0,
+                        0
+                    ],
+                    "shadowResolution": 512,
+                    "cookieScale": [
+                        1,
+                        1
+                    ],
+                    "enabled": true,
+                    "shape": 0,
+                    "range": 8,
+                    "vsmBlurMode": 1,
+                    "shadowDistance": 16,
+                    "type": "directional",
+                    "cookieFalloff": true,
+                    "shadowType": 3
+                }
+            },
+            "rotation": [
+                40,
+                60,
+                0
+            ],
+            "tags": [],
+            "enabled": true,
+            "children": []
+        },
+        "cd5d649e-c44b-4ee0-98de-2aae6f1bb6f3": {
+            "name": "Lantern",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "cd5d649e-c44b-4ee0-98de-2aae6f1bb6f3",
+            "parent": "91b77f51-91fa-4bfe-a923-c6155549c84e",
+            "children": [],
+            "position": [
+                0,
+                7,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "render": {
+                    "enabled": true,
+                    "type": "box",
+                    "asset": null,
+                    "materialAssets": [
+                        104336023
+                    ],
+                    "layers": [
+                        0
+                    ],
+                    "batchGroupId": null,
+                    "castShadows": true,
+                    "castShadowsLightmap": true,
+                    "receiveShadows": true,
+                    "lightmapped": false,
+                    "lightmapSizeMultiplier": 1,
+                    "castShadowsLightMap": true,
+                    "lightMapped": false,
+                    "lightMapSizeMultiplier": 1,
+                    "isStatic": false,
+                    "rootBone": null
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "networkEntity",
+                        "lantern"
+                    ],
+                    "scripts": {
+                        "networkEntity": {
+                            "enabled": true,
+                            "attributes": {
+                                "id": "",
+                                "owner": "",
+                                "properties": [
+                                    {
+                                        "path": "script.lantern.color",
+                                        "interpolate": false,
+                                        "ignoreForOwner": false
+                                    }
+                                ]
+                            }
+                        },
+                        "lantern": {
+                            "enabled": true,
+                            "attributes": {
+                                "color": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "d1f7f52d-32e0-4c0a-b29c-7de6e7701f9a": {
+            "name": "Button",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "d1f7f52d-32e0-4c0a-b29c-7de6e7701f9a",
+            "parent": "e60812ad-5e71-4723-a6bb-349710c318b5",
+            "children": [
+                "6913e7a7-2bce-4e9a-b38a-8a15d267baaf"
+            ],
+            "position": [
+                8,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                2,
+                0.5,
+                2
+            ],
+            "components": {
+                "render": {
+                    "enabled": true,
+                    "type": "cylinder",
+                    "asset": null,
+                    "materialAssets": [
+                        104336011
+                    ],
+                    "layers": [
+                        0
+                    ],
+                    "batchGroupId": null,
+                    "castShadows": true,
+                    "castShadowsLightmap": true,
+                    "receiveShadows": true,
+                    "lightmapped": false,
+                    "lightmapSizeMultiplier": 1,
+                    "castShadowsLightMap": true,
+                    "lightMapped": false,
+                    "lightMapSizeMultiplier": 1,
+                    "isStatic": false,
+                    "rootBone": null
+                },
+                "collision": {
+                    "enabled": true,
+                    "type": "cylinder",
+                    "halfExtents": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ],
+                    "radius": 1,
+                    "axis": 1,
+                    "height": 0.5,
+                    "asset": null,
+                    "renderAsset": null
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "networkEntity",
+                        "floorButton"
+                    ],
+                    "scripts": {
+                        "networkEntity": {
+                            "enabled": true,
+                            "attributes": {
+                                "id": "",
+                                "owner": "",
+                                "properties": [
+                                    {
+                                        "path": "position",
+                                        "interpolate": true,
+                                        "ignoreForOwner": false
+                                    }
+                                ]
+                            }
+                        },
+                        "floorButton": {
+                            "enabled": true,
+                            "attributes": {
+                                "triggerEntity": "6913e7a7-2bce-4e9a-b38a-8a15d267baaf",
+                                "connectedEntity": "cd5d649e-c44b-4ee0-98de-2aae6f1bb6f3",
+                                "positionYCurve": {
+                                    "keys": [
+                                        0,
+                                        0
+                                    ],
+                                    "type": 4
+                                },
+                                "tags": [
+                                    "player"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "rigidbody": {
+                    "enabled": true,
+                    "type": "kinematic",
+                    "mass": 1,
+                    "linearDamping": 0,
+                    "angularDamping": 0,
+                    "linearFactor": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "angularFactor": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "friction": 1,
+                    "restitution": 0
+                }
+            }
+        },
+        "622c2167-d6b6-4442-ae88-b866a69593a0": {
+            "name": "Button",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "622c2167-d6b6-4442-ae88-b866a69593a0",
+            "parent": "e60812ad-5e71-4723-a6bb-349710c318b5",
+            "children": [
+                "d7036ada-93b1-4c46-abfd-db4ea47899e7"
+            ],
+            "position": [
+                -8,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                2,
+                0.5,
+                2
+            ],
+            "components": {
+                "render": {
+                    "enabled": true,
+                    "type": "cylinder",
+                    "asset": null,
+                    "materialAssets": [
+                        104336011
+                    ],
+                    "layers": [
+                        0
+                    ],
+                    "batchGroupId": null,
+                    "castShadows": true,
+                    "castShadowsLightmap": true,
+                    "receiveShadows": true,
+                    "lightmapped": false,
+                    "lightmapSizeMultiplier": 1,
+                    "castShadowsLightMap": true,
+                    "lightMapped": false,
+                    "lightMapSizeMultiplier": 1,
+                    "isStatic": false,
+                    "rootBone": null
+                },
+                "collision": {
+                    "enabled": true,
+                    "type": "cylinder",
+                    "halfExtents": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ],
+                    "radius": 1,
+                    "axis": 1,
+                    "height": 0.5,
+                    "asset": null,
+                    "renderAsset": null
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "networkEntity",
+                        "floorButton"
+                    ],
+                    "scripts": {
+                        "networkEntity": {
+                            "enabled": true,
+                            "attributes": {
+                                "id": "",
+                                "owner": "",
+                                "properties": [
+                                    {
+                                        "path": "position",
+                                        "interpolate": true,
+                                        "ignoreForOwner": false
+                                    }
+                                ]
+                            }
+                        },
+                        "floorButton": {
+                            "enabled": true,
+                            "attributes": {
+                                "triggerEntity": "d7036ada-93b1-4c46-abfd-db4ea47899e7",
+                                "connectedEntity": "cd5d649e-c44b-4ee0-98de-2aae6f1bb6f3",
+                                "positionYCurve": {
+                                    "keys": [
+                                        0,
+                                        0
+                                    ],
+                                    "type": 4
+                                },
+                                "tags": [
+                                    "player"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "rigidbody": {
+                    "enabled": true,
+                    "type": "kinematic",
+                    "mass": 1,
+                    "linearDamping": 0,
+                    "angularDamping": 0,
+                    "linearFactor": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "angularFactor": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "friction": 1,
+                    "restitution": 0
+                }
+            }
+        },
+        "91b77f51-91fa-4bfe-a923-c6155549c84e": {
+            "name": "Level",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "91b77f51-91fa-4bfe-a923-c6155549c84e",
+            "parent": "45593dc2-4096-11ed-87b8-3a0f65194824",
+            "children": [
+                "45594254-4096-11ed-87b8-3a0f65194824",
+                "cd5d649e-c44b-4ee0-98de-2aae6f1bb6f3",
+                "e60812ad-5e71-4723-a6bb-349710c318b5"
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {}
+        },
+        "e60812ad-5e71-4723-a6bb-349710c318b5": {
+            "name": "Lantern Buttons",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "e60812ad-5e71-4723-a6bb-349710c318b5",
+            "parent": "91b77f51-91fa-4bfe-a923-c6155549c84e",
+            "children": [
+                "d1f7f52d-32e0-4c0a-b29c-7de6e7701f9a",
+                "622c2167-d6b6-4442-ae88-b866a69593a0"
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {}
+        },
+        "6913e7a7-2bce-4e9a-b38a-8a15d267baaf": {
+            "name": "Trigger",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "6913e7a7-2bce-4e9a-b38a-8a15d267baaf",
+            "parent": "d1f7f52d-32e0-4c0a-b29c-7de6e7701f9a",
+            "children": [],
+            "position": [
+                0,
+                0.65,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "collision": {
+                    "enabled": true,
+                    "type": "cylinder",
+                    "halfExtents": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ],
+                    "radius": 1,
+                    "axis": 1,
+                    "height": 1.2,
+                    "asset": null,
+                    "renderAsset": null
+                }
+            }
+        },
+        "d7036ada-93b1-4c46-abfd-db4ea47899e7": {
+            "name": "Trigger",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "d7036ada-93b1-4c46-abfd-db4ea47899e7",
+            "parent": "622c2167-d6b6-4442-ae88-b866a69593a0",
+            "children": [],
+            "position": [
+                0,
+                0.65,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "collision": {
+                    "enabled": true,
+                    "type": "cylinder",
+                    "halfExtents": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ],
+                    "radius": 1,
+                    "axis": 1,
+                    "height": 1.2,
+                    "asset": null,
+                    "renderAsset": null
+                }
+            }
+        },
+        "b15b8ccb-394b-4f50-ac6b-184ba2565924": {
+            "name": "2D Screen",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "b15b8ccb-394b-4f50-ac6b-184ba2565924",
+            "parent": "45593dc2-4096-11ed-87b8-3a0f65194824",
+            "children": [
+                "d0d7d871-e085-4bfd-8ef2-c7301d9e55de",
+                "8e9539a4-23fd-457c-8238-ea14f7bfebaa",
+                "b6ad0e16-a1c4-4712-b989-bc14bfdda8eb"
+            ],
+            "position": [
+                8.494311881801504,
+                20,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "screen": {
+                    "enabled": true,
+                    "screenSpace": true,
+                    "scaleMode": "blend",
+                    "scaleBlend": 0.5,
+                    "resolution": [
+                        1080,
+                        1920
+                    ],
+                    "referenceResolution": [
+                        1080,
+                        1920
+                    ],
+                    "priority": 0
+                }
+            }
+        },
+        "d0d7d871-e085-4bfd-8ef2-c7301d9e55de": {
+            "name": "Leave Button",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "d0d7d871-e085-4bfd-8ef2-c7301d9e55de",
+            "parent": "b15b8ccb-394b-4f50-ac6b-184ba2565924",
+            "children": [
+                "4aef780f-10c9-487e-b02f-d8710fa5a9a4"
+            ],
+            "position": [
+                -20,
+                -20,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "button": {
+                    "enabled": true,
+                    "active": true,
+                    "imageEntity": "d0d7d871-e085-4bfd-8ef2-c7301d9e55de",
+                    "hitPadding": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "transitionMode": 0,
+                    "hoverTint": [
+                        0.8745098039215686,
+                        0.8627450980392157,
+                        0.8627450980392157,
+                        1
+                    ],
+                    "pressedTint": [
+                        0.8117647058823529,
+                        0.8117647058823529,
+                        0.8117647058823529,
+                        1
+                    ],
+                    "inactiveTint": [
+                        0.611764705882353,
+                        0.611764705882353,
+                        0.611764705882353,
+                        1
+                    ],
+                    "fadeDuration": 0,
+                    "hoverSpriteAsset": null,
+                    "hoverSpriteFrame": 0,
+                    "pressedSpriteAsset": null,
+                    "pressedSpriteFrame": 0,
+                    "inactiveSpriteAsset": null,
+                    "inactiveSpriteFrame": 0,
+                    "hoverTextureAsset": null,
+                    "pressedTextureAsset": null,
+                    "inactiveTextureAsset": null
+                },
+                "element": {
+                    "enabled": true,
+                    "type": "image",
+                    "anchor": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "pivot": [
+                        1,
+                        1
+                    ],
+                    "text": "",
+                    "key": null,
+                    "fontAsset": 104337183,
+                    "fontSize": 32,
+                    "minFontSize": 8,
+                    "maxFontSize": 32,
+                    "autoFitWidth": false,
+                    "autoFitHeight": false,
+                    "maxLines": null,
+                    "lineHeight": 32,
+                    "wrapLines": true,
+                    "spacing": 1,
+                    "color": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "opacity": 1,
+                    "textureAsset": null,
+                    "spriteAsset": null,
+                    "spriteFrame": 0,
+                    "pixelsPerUnit": null,
+                    "width": 160,
+                    "height": 80,
+                    "margin": [
+                        -180,
+                        -100,
+                        20,
+                        20
+                    ],
+                    "alignment": [
+                        0.5,
+                        0.5
+                    ],
+                    "outlineColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "outlineThickness": 0,
+                    "shadowColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shadowOffset": [
+                        0,
+                        0
+                    ],
+                    "rect": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    "materialAsset": null,
+                    "autoWidth": false,
+                    "autoHeight": false,
+                    "fitMode": "stretch",
+                    "useInput": true,
+                    "batchGroupId": null,
+                    "mask": false,
+                    "layers": [
+                        4
+                    ],
+                    "enableMarkup": false
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "leaveButton"
+                    ],
+                    "scripts": {
+                        "leaveButton": {
+                            "enabled": true,
+                            "attributes": {}
+                        }
+                    }
+                }
+            }
+        },
+        "4aef780f-10c9-487e-b02f-d8710fa5a9a4": {
+            "name": "Text",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "4aef780f-10c9-487e-b02f-d8710fa5a9a4",
+            "parent": "d0d7d871-e085-4bfd-8ef2-c7301d9e55de",
+            "children": [],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "element": {
+                    "enabled": true,
+                    "type": "text",
+                    "anchor": [
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5
+                    ],
+                    "pivot": [
+                        0.5,
+                        0.5
+                    ],
+                    "text": "LEAVE",
+                    "key": null,
+                    "fontAsset": 104337183,
+                    "fontSize": 40,
+                    "minFontSize": 8,
+                    "maxFontSize": 32,
+                    "autoFitWidth": false,
+                    "autoFitHeight": false,
+                    "maxLines": null,
+                    "lineHeight": 32,
+                    "wrapLines": true,
+                    "spacing": 1,
+                    "color": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "opacity": 1,
+                    "textureAsset": null,
+                    "spriteAsset": null,
+                    "spriteFrame": 0,
+                    "pixelsPerUnit": null,
+                    "width": 87.52,
+                    "height": 32,
+                    "margin": [
+                        -43.76,
+                        -16.528,
+                        -43.76,
+                        -16.528
+                    ],
+                    "alignment": [
+                        0.5,
+                        0.5
+                    ],
+                    "outlineColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "outlineThickness": 0,
+                    "shadowColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shadowOffset": [
+                        0,
+                        0
+                    ],
+                    "rect": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    "materialAsset": null,
+                    "autoWidth": true,
+                    "autoHeight": true,
+                    "fitMode": "stretch",
+                    "useInput": false,
+                    "batchGroupId": null,
+                    "mask": false,
+                    "layers": [
+                        4
+                    ],
+                    "enableMarkup": false
+                }
+            }
+        },
+        "8e9539a4-23fd-457c-8238-ea14f7bfebaa": {
+            "name": "Room ID",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "8e9539a4-23fd-457c-8238-ea14f7bfebaa",
+            "parent": "b15b8ccb-394b-4f50-ac6b-184ba2565924",
+            "children": [],
+            "position": [
+                20,
+                -20,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "element": {
+                    "enabled": true,
+                    "type": "text",
+                    "anchor": [
+                        0,
+                        1,
+                        0,
+                        1
+                    ],
+                    "pivot": [
+                        0,
+                        1
+                    ],
+                    "text": "Room ID: 0",
+                    "key": null,
+                    "fontAsset": 104337183,
+                    "fontSize": 32,
+                    "minFontSize": 8,
+                    "maxFontSize": 32,
+                    "autoFitWidth": false,
+                    "autoFitHeight": false,
+                    "maxLines": null,
+                    "lineHeight": 32,
+                    "wrapLines": true,
+                    "spacing": 1,
+                    "color": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "opacity": 1,
+                    "textureAsset": null,
+                    "spriteAsset": null,
+                    "spriteFrame": 0,
+                    "pixelsPerUnit": null,
+                    "width": 147.424,
+                    "height": 32,
+                    "margin": [
+                        20,
+                        -53.056,
+                        -167.424,
+                        20
+                    ],
+                    "alignment": [
+                        0.5,
+                        0.5
+                    ],
+                    "outlineColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "outlineThickness": 0,
+                    "shadowColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shadowOffset": [
+                        0,
+                        0
+                    ],
+                    "rect": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    "materialAsset": null,
+                    "autoWidth": true,
+                    "autoHeight": true,
+                    "fitMode": "stretch",
+                    "useInput": false,
+                    "batchGroupId": null,
+                    "mask": false,
+                    "layers": [
+                        4
+                    ],
+                    "enableMarkup": false
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "uiRoomId"
+                    ],
+                    "scripts": {
+                        "uiRoomId": {
+                            "enabled": true,
+                            "attributes": {}
+                        }
+                    }
+                }
+            }
+        },
+        "b6ad0e16-a1c4-4712-b989-bc14bfdda8eb": {
+            "name": "Log",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "b6ad0e16-a1c4-4712-b989-bc14bfdda8eb",
+            "parent": "b15b8ccb-394b-4f50-ac6b-184ba2565924",
+            "children": [],
+            "position": [
+                0,
+                -20,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "element": {
+                    "enabled": true,
+                    "type": "text",
+                    "anchor": [
+                        0.5,
+                        1,
+                        0.5,
+                        1
+                    ],
+                    "pivot": [
+                        0.5,
+                        1
+                    ],
+                    "text": "GAME LOG",
+                    "key": null,
+                    "fontAsset": 104337183,
+                    "fontSize": 32,
+                    "minFontSize": 8,
+                    "maxFontSize": 32,
+                    "autoFitWidth": false,
+                    "autoFitHeight": false,
+                    "maxLines": null,
+                    "lineHeight": 32,
+                    "wrapLines": true,
+                    "spacing": 1,
+                    "color": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "opacity": 1,
+                    "textureAsset": null,
+                    "spriteAsset": null,
+                    "spriteFrame": 0,
+                    "pixelsPerUnit": null,
+                    "width": 145.92000000000002,
+                    "height": 33.056,
+                    "margin": [
+                        -72.96000000000001,
+                        -53.056,
+                        -72.96000000000001,
+                        20
+                    ],
+                    "alignment": [
+                        0.5,
+                        0.5
+                    ],
+                    "outlineColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "outlineThickness": 0,
+                    "shadowColor": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "shadowOffset": [
+                        0,
+                        0
+                    ],
+                    "rect": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    "materialAsset": null,
+                    "autoWidth": true,
+                    "autoHeight": true,
+                    "fitMode": "stretch",
+                    "useInput": false,
+                    "batchGroupId": null,
+                    "mask": false,
+                    "layers": [
+                        4
+                    ],
+                    "enableMarkup": false
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "log"
+                    ],
+                    "scripts": {
+                        "log": {
+                            "enabled": true,
+                            "attributes": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "item_id": "1548170",
+    "checkpoint_id": "7f4f66b8-96d4-4aef-a180-5f6423e9f9d5"
+}
