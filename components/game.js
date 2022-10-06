@@ -35,7 +35,7 @@ Game.prototype.swap = function (old) {
 Game.prototype.onJoin = function (user) {
     // user entity
     const entity = this.tplUser.instantiate(this.app);
-    entity.children[0].entity.element.text = this.nicmkames[(Math.floor(Math.random() * 7))];
+    entity.children[0].element.text = this.nicmkames[(Math.floor(Math.random() * 6))];
     entity.name = 'User ' + user.id;
     entity.script.networkEntity.owner = user.id;
     this.entity.addChild(entity);
