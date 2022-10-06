@@ -12,7 +12,9 @@
                 "enabled": true,
                 "resource_id": "bc072a6d-1cec-48e2-988d-db16e289529e",
                 "parent": null,
-                "children": [],
+                "children": [
+                    "4919969c-ed1b-4168-853d-f90ce57abf3c"
+                ],
                 "position": [
                     0,
                     0,
@@ -133,6 +135,113 @@
                         "lightMapSizeMultiplier": 1,
                         "isStatic": false,
                         "rootBone": null
+                    }
+                }
+            },
+            "4919969c-ed1b-4168-853d-f90ce57abf3c": {
+                "name": "Nickname",
+                "tags": [],
+                "enabled": true,
+                "resource_id": "4919969c-ed1b-4168-853d-f90ce57abf3c",
+                "parent": "bc072a6d-1cec-48e2-988d-db16e289529e",
+                "children": [],
+                "position": [
+                    0,
+                    1.5,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    1,
+                    1,
+                    1
+                ],
+                "components": {
+                    "element": {
+                        "enabled": true,
+                        "type": "text",
+                        "anchor": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            0.5
+                        ],
+                        "pivot": [
+                            0.5,
+                            0.5
+                        ],
+                        "text": "",
+                        "key": null,
+                        "fontAsset": 104337183,
+                        "fontSize": 1,
+                        "minFontSize": 8,
+                        "maxFontSize": 32,
+                        "autoFitWidth": false,
+                        "autoFitHeight": false,
+                        "maxLines": null,
+                        "lineHeight": 10,
+                        "wrapLines": true,
+                        "spacing": 1,
+                        "color": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "opacity": 1,
+                        "textureAsset": null,
+                        "spriteAsset": null,
+                        "spriteFrame": 0,
+                        "pixelsPerUnit": null,
+                        "width": 0.22,
+                        "height": 1.033,
+                        "margin": [
+                            -0.11,
+                            0.984,
+                            -0.11,
+                            -2.016
+                        ],
+                        "alignment": [
+                            0.5,
+                            0.5
+                        ],
+                        "outlineColor": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "outlineThickness": 0,
+                        "shadowColor": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shadowOffset": [
+                            0,
+                            0
+                        ],
+                        "rect": [
+                            0,
+                            0,
+                            1,
+                            1
+                        ],
+                        "materialAsset": null,
+                        "autoWidth": true,
+                        "autoHeight": true,
+                        "fitMode": "stretch",
+                        "useInput": false,
+                        "batchGroupId": null,
+                        "mask": false,
+                        "layers": [
+                            4
+                        ],
+                        "enableMarkup": false
                     }
                 }
             }
