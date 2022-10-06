@@ -1,6 +1,7 @@
 var PlayerController = pc.createScript('playerController');
 
 PlayerController.attributes.add('speed', { type: 'number' });
+PlayerController.attributes.add('jumpForce', { type: 'number', default: 1500 });
 
 PlayerController.prototype.initialize = function () {
     this.user = this.entity.networkEntity.user;
